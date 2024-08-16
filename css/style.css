@@ -1,31 +1,30 @@
+/*Icinio de la pagina*/
 html{
     font-family: "Montserrat", sans-serif;
 }
 body{
     margin: 0px;
     background-color: #ffffff;
+    background-image: url("../img/fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-#header-content{
-    background-color: #ffffff;
+/*heder de la pagina*/
+.header-content{
+    margin: 0 auto;
+    width: 200px;
+    margin-bottom: 150px;
 }
-#content-page{
-    background-color: bisque;
+header{
+    margin: 0 auto;
+    
 }
-#footer-content{
-    background-color: aliceblue;
+.logotipo{    
+    margin: 0 auto;
 }
-/*termina el estilo de body*/
-.logotipo{
-    margin-top: -160px;
-}
-#bordesuperior{
-    width: 500px;
-    height: 500px;
-    margin-left: -250px;
-}
-#logo{
-    width: 500px;
-}
+
+
+/*comienza el contenedor*/
 #titulo{
     font-family: "Edu VIC WA NT Beginner", cursive; 
     text-decoration: underline;
@@ -39,11 +38,20 @@ body{
     margin: 0px;
     padding-left: 60px;
 }
-/*comienza el contenedor*/
-#content-page{
-    width: 400px;
+.content-page{
     margin: 0 auto;
 }
-form h2{
+.titulos{
     margin: 0 auto;
 }
+.formulario{
+    width: 500px;
+    margin: 0 auto;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+}
+.formulario h2{
+    align-items: center;
+    font-family: "Open Sans";
+}
+/*comienza el footer*/
