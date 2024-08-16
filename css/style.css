@@ -1,0 +1,49 @@
+html{
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    margin: 0px;
+    background-color: #ffffff;
+}
+#header-content{
+    background-color: #ffffff;
+}
+#content-page{
+    background-color: bisque;
+}
+#footer-content{
+    background-color: aliceblue;
+}
+/*termina el estilo de body*/
+.logotipo{
+    margin-top: -160px;
+}
+#bordesuperior{
+    width: 500px;
+    height: 500px;
+    margin-left: -250px;
+}
+#logo{
+    width: 500px;
+}
+#titulo{
+    font-family: "Edu VIC WA NT Beginner", cursive; 
+    text-decoration: underline;
+    font-size: 60px;
+    margin: 0px;
+    padding-left: 50px;
+}
+#subtitulo{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    margin: 0px;
+    padding-left: 60px;
+}
+/*comienza el contenedor*/
+#content-page{
+    width: 400px;
+    margin: 0 auto;
+}
+form h2{
+    margin: 0 auto;
+}
