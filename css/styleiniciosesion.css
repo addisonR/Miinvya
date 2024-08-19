@@ -1,0 +1,81 @@
+body{
+    background-image: url("../img/fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+/*termina el body y inicia el header*/
+.header-content{
+    text-align: center;
+    margin: 0 auto;
+}
+.logotipo img{
+    margin: 0 auto;
+}
+/*termina el header y comienza el contenido*/
+.content-page{    
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+}
+/*logitipo*/
+.titulos{
+    margin: 0 auto;
+    width: 400px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+#titulo{
+    font-family: "Edu VIC WA NT Beginner", cursive; 
+    text-decoration: underline;
+    font-size: 60px;
+    padding-top: 50px;
+    padding-left: 100px;
+    margin-bottom: 0px;
+}
+#subtitulo{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    padding-left: 120px;
+    margin-top: 0px;
+    
+}
+/*formulario*/
+.formulario{
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    margin-top: 20px;
+    margin-left: 150px;
+    background-color: #d9d9d9;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 5px #706e6e;
+}
+.formulario h2{
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+.formulario label{
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+.formulario input{
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+/*termina el contenido y inicia el footer*/
+.footer-content{    
+    margin: 0 auto;
+    background-color:blueviolet;
+    text-align: center;
+}
