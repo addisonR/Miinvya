@@ -2,13 +2,13 @@ body{
     background-image: url("../img/fondo.png");
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Open Sans', sans-serif;
     display: grid;
     min-height: 100dvh;
     grid-template-rows: auto 1fr auto;
 }
 /*termina el body y inicia el header*/
 .header-content{
+    width: 100%;
     text-align: center;
     margin: 0 auto;
 }
@@ -16,10 +16,14 @@ body{
     margin: 0 auto;
 }
 /*termina el header y comienza el contenido*/
+.content{    
+    width: 100%;
+    margin: 0 auto;
+}
 .content-page{    
+    width: 100%;    
     margin: 0 auto;
     display: flex;
-    width: 100%;
 }
 /*logitipo*/
 .titulos{
@@ -49,7 +53,7 @@ body{
     width: 400px;
     height: 400px;
     margin-top: 20px;
-    margin-left: 150px;
+    margin-left: 60px;
     background-color: #d9d9d9;
     border-radius: 15px;
     box-shadow: 0px 0px 5px 5px #706e6e;
@@ -73,9 +77,25 @@ body{
     border-radius: 20px;
     text-align: center;
 }
-/*termina el contenido y inicia el footer*/
-.footer-content{    
+#btn-iniciar{
     margin: 0 auto;
-    background-color:blueviolet;
+    background-image: url("../img/btninicio.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-left: 170px;
+    margin-top: 50px;
+    height: 50px;    
+    width: 50px;
+
+}
+/*termina el contenido y inicia el footer*/
+.footer-content{      
+    width: 100%;  
+    margin: 0 auto;
     text-align: center;
 }
