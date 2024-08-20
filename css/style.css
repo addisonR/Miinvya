@@ -11,9 +11,26 @@ body{
     width: 100%;
     text-align: center;
     margin: 0 auto;
+    background-color: #d6d6d6;
 }
 .logotipo img{
+    margin: 0 auto;    
+    width: 170px;
+}
+.logotipo a{
+    margin-left: 10px;
+    background-color: #d6d6d6;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-size: 30px;
+    text-align: center;
+}
+.logotipo button{
     margin: 0 auto;
+    width: 150px;
+    height: 40px;
+    margin-left: 50px;
+    background-color: #a09d9d;
+    border-radius: 15px;
 }
 /*termina el header y comienza el contenido*/
 .content-page{    
