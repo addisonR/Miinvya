@@ -1,68 +1,252 @@
 body{
+    margin: 0;
     background-image: url("../img/fondo.png");
     background-repeat: no-repeat;
     background-size: cover;
-    display: grid;
-    min-height: 100dvh;
-    grid-template-rows: auto 1fr auto;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-/*termina el body y inicia el header*/
+
+.content{
+    display: grid;    
+    grid-template-rows: 100px 1fr 100px;    
+    height: 100vh;
+    gap: 15px;
+    grid-template-areas: 
+    "cabecera"
+    "contenido"
+    "piedepagina";
+}
+
 .header-content{
-    width: 100%;
+    grid-area: cabecera;
+}
+
+.content-page{
+    grid-area: contenido;    
     text-align: center;
-    margin: 0 auto;
-    background-color: #d6d6d6;
+    font-size: 25px;
 }
-.logotipo img{
-    margin: 0 auto;    
-    width: 170px;
+
+.footer-content{
+    grid-area: piedepagina;
+    align-items: center;
 }
-.logotipo a{
-    margin-left: 10px;
-    background-color: #d6d6d6;
-    font-family: "Edu VIC WA NT Beginner", cursive;
+
+/*CSS items header*/
+.header-nav{
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
     font-size: 30px;
-    text-align: center;
-}
-.logotipo button{
-    margin: 0 auto;
+}    
+
+.header-nav img{
     width: 150px;
-    height: 40px;
-    margin-left: 50px;
-    background-color: #a09d9d;
+    height: 100px;
+}
+
+.header-nav nav{
+    height: 100px;      
+}
+
+.header-nav button{
+    width: 150px;
+    height: 50px;
+    margin: auto 0;
     border-radius: 15px;
+    box-shadow: inset 0px 0px 5px 5px #02032a;
+    border: white;
+    font-size: 25px;    
+    font-family: cursive;
 }
-/*termina el header y comienza el contenido*/
-.content-page{    
-    width: 100%;    
-    margin: 0 auto;
-    display: flex;
+
+.header-nav button:hover{
+    box-shadow: 0px 0px 5px 5px gray;
 }
-/*logitipo*/
-.titulos{
-    margin: 0 auto;
-    width: 400px;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-#titulo{
-    font-family: "Edu VIC WA NT Beginner", cursive; 
-    text-decoration: underline;
-    font-size: 60px;
-    padding-top: 50px;
-    padding-left: 100px;
-    margin-bottom: 0px;
-}
-#subtitulo{
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
-    padding-left: 120px;
-    margin-top: 0px;
-    
-}
-/*termina el contenido y inicia el footer*/
-.footer-content{      
-    width: 100%;  
-    margin: 0 auto;
+
+/*CSS items navbar*/
+.Barra-de-navegar ul{
     text-align: center;
+}
+
+.Barra-de-navegar li{
+    display: inline;    
+    padding: 10px;
+}
+
+.Barra-de-navegar li a{
+    text-decoration: none;
+    color: #5a5858;
+}
+
+.Barra-de-navegar li a:hover{
+    color: #02032a;
+}
+
+/*Css contenido de la pagina*/
+.content-page h3{
+    text-align: center;
+    font-size: 30px;
+}
+
+.somos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #ffffff;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.content-page h4{
+    text-align: center;
+    font-size: 25px;
+}
+
+#quienes1{
+    border-left: 2px solid #0d88d5;
+    border-top: 2px solid #0d88d5;
+    border-radius: 20px;
+}
+
+#quienes1:hover{
+    background: #ffffff;
+    border-left: 2px;
+    border-top: 2px;
+    border-right: 2px solid #0d88d5;
+    border-bottom: 2px solid #0d88d5;
+    border-radius: 20px;
+}
+
+#quienes2{
+    border-left: 2px solid #144d70;
+    border-top: 2px solid #144d70;
+    border-radius: 20px;
+}
+
+#quienes2:hover{
+    background: #ffffff;
+    border-left: 2px;
+    border-top: 2px;
+    border-right: 2px solid #144d70;
+    border-bottom: 2px solid #144d70;
+    border-radius: 20px;
+}
+#quienes3{
+    border-left: 2px solid #d5571d;
+    border-top: 2px solid #d5571d;
+    border-radius: 20px;
+}
+
+#quienes3:hover{
+    background: #ffffff;
+    border-left: 2px;
+    border-top: 2px;
+    border-right: 2px solid #d5571d;
+    border-bottom: 2px solid #d5571d;
+    border-radius: 20px;
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+#service1{
+    border-left: 2px solid #41d762;
+    border-top: 2px solid #41d762;
+    border-radius: 20px;
+}
+
+#service1:hover{
+    background: #ffffff;
+    border-left: 2px;
+    border-top: 2px;
+    border-right: 2px solid #41d762;
+    border-bottom: 2px solid #41d762;
+    border-radius: 20px;
+}
+
+#service2{
+    border-left: 2px solid #265408;
+    border-top: 2px solid #265408;
+    border-radius: 20px;
+}
+
+#service2:hover{
+    background: #ffffff;
+    border-left: 2px;
+    border-top: 2px;
+    border-right: 2px solid #265408;
+    border-bottom: 2px solid #265408;
+    border-radius: 20px;
+}
+#service3{
+    border-left: 2px solid #d51d1d;
+    border-top: 2px solid #d51d1d;
+    border-radius: 20px;
+}
+
+#service3:hover{
+    background: #ffffff;
+    border-left: 2px;
+    border-top: 2px;
+    border-right: 2px solid #d51d1d;
+    border-bottom: 2px solid #d51d1d;
+    border-radius: 20px;
+}
+
+.quienesomos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.quienesomos div{
+    width: 400px;
+    height: 400px;
+}
+
+.servicioproducto{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;    
+    justify-items: center;
+}
+
+.servicioproducto div{
+    width: 400px;
+    height: 500px;
+}
+
+.servicioproducto div img{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+.contacto{
+    background: #9d9d9d;
+    margin: 0;
+    text-align: center;
+}
+
+.contacto input{
+    width: 400px;
+    height: 20px;
+    text-align: center;
+    margin: auto;
+}
+
+.contacto textarea{
+    width: 815px;
+    height: 200px;
+}
+
+.contacto button{
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+}
+
+/*footer de la pagina*/
+.footer-content{
+    margin: auto;
 }

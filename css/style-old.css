@@ -1,0 +1,68 @@
+body{
+    background-image: url("../img/fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+/*termina el body y inicia el header*/
+.header-content{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #d6d6d6;
+}
+.logotipo img{
+    margin: 0 auto;    
+    width: 170px;
+}
+.logotipo a{
+    margin-left: 10px;
+    background-color: #d6d6d6;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-size: 30px;
+    text-align: center;
+}
+.logotipo button{
+    margin: 0 auto;
+    width: 150px;
+    height: 40px;
+    margin-left: 50px;
+    background-color: #a09d9d;
+    border-radius: 15px;
+}
+/*termina el header y comienza el contenido*/
+.content-page{    
+    width: 100%;    
+    margin: 0 auto;
+    display: flex;
+}
+/*logitipo*/
+.titulos{
+    margin: 0 auto;
+    width: 400px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+#titulo{
+    font-family: "Edu VIC WA NT Beginner", cursive; 
+    text-decoration: underline;
+    font-size: 60px;
+    padding-top: 50px;
+    padding-left: 100px;
+    margin-bottom: 0px;
+}
+#subtitulo{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    padding-left: 120px;
+    margin-top: 0px;
+    
+}
+/*termina el contenido y inicia el footer*/
+.footer-content{      
+    width: 100%;  
+    margin: 0 auto;
+    text-align: center;
+}
