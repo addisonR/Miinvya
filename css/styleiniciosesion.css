@@ -1,103 +1,132 @@
-body{
-    background-image: url("../img/fondo.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    min-height: 100dvh;
-    grid-template-rows: auto 1fr auto;
+body{    
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-/*termina el body y inicia el header*/
+.content{
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    grid-template-areas:
+    ". cabecera cabecera"
+    "contenido contenido ."
+    "piedepagina piedepagina piedepagina ";
+}
+
+/*Header*/
 .header-content{
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
+    grid-area: cabecera;
+}
+.logotipo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
 }
 .logotipo img{
-    margin: 0 auto;
-    width: 170px;
+    width: 150px;
+    height: 100px;
 }
-/*termina el header y comienza el contenido*/
-.content{    
-    width: 100%;
-    margin: 0 auto;
+.logotipo button{
+    width: 150px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
+    border:  2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #000;
+    transition: all 0.3s ease;
 }
-.content-page{    
-    width: 100%;    
-    margin: 0 auto;
-    display: flex;
+.logotipo button:hover{
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #e4bc7d;
+    box-shadow: 5px 5px 0px #e4bc7d;
 }
-/*logitipo*/
+.logotipo button:active{
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+/*Contentido*/
+.content-page{
+    grid-area: contenido;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 .titulos{
-    margin: 0 auto;
-    width: 400px;
-    margin-left: 0px;
-    margin-right: 0px;
+    width: 200px;
+    height: 150px;
+    margin: 100px;
 }
-#titulo{
-    font-family: "Edu VIC WA NT Beginner", cursive; 
-    text-decoration: underline;
-    font-size: 60px;
-    padding-top: 50px;
-    padding-left: 100px;
-    margin-bottom: 0px;
+.titulos h1{
+    font-style: italic;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 50px;
+    margin: 0px;
 }
-#subtitulo{
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
-    padding-left: 120px;
-    margin-top: 0px;
-    
+.titulos h2{    
+    text-align: center;
+    font-family: Roboto;
+    font-size: 25px;
+    margin: 0px;
 }
-/*formulario*/
 .formulario{
-    margin: 0 auto;
+    margin: auto;
     width: 400px;
     height: 400px;
-    margin-top: 20px;
-    margin-left: 5%;
-    background-color: #d9d9d9;
-    border-radius: 15px;
-    box-shadow: 0px 0px 5px 5px #706e6e;
+    background: #e4bc7d;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 5px 5px 0px #000;
 }
 .formulario h2{
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
+    margin: 30px;
 }
 .formulario label{
-    text-align: left;
-    font-family: "Open Sans", sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    padding-left: 20px;
+    font-size: 25px;
 }
 .formulario input{
-    margin-top: 10px;
-    margin-left: 50px;
-    width: 300px;
+    margin: 25px;
+    margin-top: 5px;
+    width: 250px;
     height: 40px;
     border-radius: 20px;
     text-align: center;
 }
-#btn-iniciar{
-    margin: 0 auto;
-    background-image: url("../img/iniciar.png");
-    background-color: #d9d9d9;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: none;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin-left: 170px;
-    margin-top: 50px;
-    height: 50px;    
-    width: 50px;
-
+.formulario button{
+    width: 150px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
+    border:  2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #000;
+    transition: all 0.3s ease;
 }
-/*termina el contenido y inicia el footer*/
-.footer-content{      
-    width: 100%;  
-    margin: 0 auto;
+.formulario button:hover{
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #e4bc7d;
+    box-shadow: 5px 5px 0px #e4bc7d;
+}
+.formulario button:active{
+    box-shadow: none;
+    transform: translateY(4px);
+}
+/*footer*/
+.footer-content{
+    margin: auto;
+    grid-area: piedepagina;
     text-align: center;
 }
