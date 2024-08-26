@@ -1,125 +1,106 @@
-body{
-    background-image: url("../img/fondo.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Open Sans', sans-serif;
-    display: grid;
-    min-height: 100dvh;
-    grid-template-rows: auto 1fr auto;
+body{    
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-/*termina el body y inicia el header*/
+.content{
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    ". cabecera ."
+    "contenido contenido contenido"
+    ". piedepagina .";
+}
+
+/*Header*/
 .header-content{
-    width: 100%;
+    grid-area: cabecera;
+}
+.logotipo{
     text-align: center;
-    margin: 0 auto;
 }
 .logotipo img{
-    margin: 0 auto;    
-    width: 170px;
-}
-/*termina el header y comienza el contenido*/
-.content{
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
-.content-page{        
-    width: 100%;    
+    width: 150px;
     height: 100px;
-    margin: 0 auto;
-    display: flex;
 }
-/*logitipo*/
+
+/*contenido*/
+.content-page{
+    background: blue;
+    grid-area: contenido;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    margin: 0px;
+}
 .titulos{
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.titulolocal{
+    font-family: 'Open Sans';
     margin-left: 100px;
+}
+.titulolocal h1{
     width: 200px;
-    height: 100px;
-}
-#titulo{
-    font-family: "Edu VIC WA NT Beginner", cursive; 
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-size: 50px;
     text-decoration: underline;
-    font-size: 60px;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin: 0;
+    text-align: center;
 }
-#subtitulo{
-    font-family: "Open Sans", sans-serif;
+.titulolocal h2{
+    width: 200px;
+    font-family: 'Open Sans',sans-serif;
     font-size: 20px;
-    margin-top: 0px;
-    padding-left: 20px;
+    margin: 0;    
+    text-align: center;
 }
-.datosgrupo{
-    margin: 0 auto;
-    width: 300px;
-    height: 100px;
-    margin-left: 50%;
-    font-family: "Open Sans", sans-serif;
+.titulocliente{
+    font-family: 'Open Sans';
+    font-size: 25px;
+    text-align: end;
+    margin: auto;
+    margin-right: 50px;
+
 }
-.nombregrupo h3{
-    font-family: "Open Sans", sans-serif;
-    font-size: 30px;
+.titulocliente h3{
+    display: inline;
+    margin: 0;
     text-decoration: underline;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    float: left;
 }
-.nombregrupo button{
-    width: 50px;
-    height: 40%;
-    margin-left: 10px;
+.titulocliente button{
+    width: 100px;
+    height: 30px;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
     background-color: #ffffff;
-    border: none;
-    background-image: url("../img/salir.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.nombregrupo select{
-    font-family: "Open Sans", sans-serif;
-    width: 200px;
-    height: 40px;
+    border:  2px solid #000;
     border-radius: 10px;
-    text-align: center;
+    box-shadow: 5px 5px 0px #000;
+    transition: all 0.3s ease;
 }
-/*tabla*/
-.busquedaproductos{
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 50px;
-    font-family: "Open Sans", sans-serif;
-    font-size: 35px;
-}
-.formularioconsulta label{
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-left: 50px;
-}
-.formularioconsulta input{
-    font-family: "Open Sans", sans-serif;
-    width: 300px;
-    height: 40px;
-    margin-left: 20px;
-    border-radius: 10px;
-    text-align: center;
-}
-.tab-busqueda{
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 50px;
-    border: 1px solid #000;
+.titulocliente button:hover{
     background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #e4bc7d;
+    box-shadow: 5px 5px 0px #e4bc7d;
 }
-.tab-busqueda tr , td{
-    width: 25%;
-    border: 1px solid #000;
-    text-align: center;
+.titulocliente button:active{
+    box-shadow: none;
+    transform: translateY(4px);
 }
-#tabladeproductos{
-    background-color: #d9d6d9;
+.titulocliente select{
+    height: 30px;
+    border-radius: 20px;
+    margin-right: 50px;
+    box-shadow: 5px 5px 0px #e4bc7d;
 }
-/*termina el contenido y inicia el footer*/
+/*footer*/
 .footer-content{    
-    width: 100%;
-    margin: 0 auto;
+    grid-area: piedepagina;
     text-align: center;
 }

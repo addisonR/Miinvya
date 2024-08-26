@@ -67,14 +67,15 @@ body{
 .titulos h1{
     font-style: italic;
     text-align: center;
-    font-family: Roboto;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    text-decoration: underline;
     font-size: 50px;
     margin: 0px;
 }
 .titulos h2{    
     text-align: center;
     font-family: Roboto;
-    font-size: 25px;
+    font-size: 20px;
     margin: 0px;
 }
 .formulario{
@@ -93,12 +94,14 @@ body{
     font-size: 25px;
 }
 .formulario input{
-    margin: 25px;
-    margin-top: 5px;
-    width: 250px;
+    background: white;
     height: 40px;
+    line-height: 40px;
     border-radius: 20px;
-    text-align: center;
+    padding: 0px 20px;
+    border: none;
+    margin-bottom: 20px;
+    color:rgb(0, 0, 0);
 }
 .formulario button{
     width: 150px;
