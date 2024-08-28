@@ -6,4 +6,4 @@ btn_ir.addEventListener('click', function(){
 let btn_atras = document.getElementById("iratras");
 btn_atras.addEventListener('click', function(){
     window.location.href = "../views/index.html"
-});
+})
