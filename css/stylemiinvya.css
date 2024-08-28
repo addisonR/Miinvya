@@ -27,7 +27,6 @@ body{
 
 /*contenido*/
 .content-page{
-    background: blue;
     grid-area: contenido;
     display: grid;
     grid-template-rows: 100px 1fr;
@@ -99,8 +98,40 @@ body{
     margin-right: 50px;
     box-shadow: 5px 5px 0px #e4bc7d;
 }
-
-
+.formularioconsulta{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 30px;
+    margin-left: 25px;    
+    margin-bottom: 25px;
+    text-align: center;
+}
+.formularioconsulta input{
+    width: 300px;
+    height: 25px;
+    border-radius: 25px;
+    margin: 5px;
+    padding: 15px;
+}
+.tab-busqueda{
+    width: 80vw;
+    min-height: 250px;
+    border: 5px solid #000;
+    box-shadow: 5px 5px 5px 0 black;
+    border-radius: 25px;
+    margin: auto;
+    background: #e4bc7d;
+    padding: 10px;
+}
+.tab-busqueda tr, td{
+    width: 250px;
+    height: 50px;
+    text-align: center;
+}
+#tabladeproductos{
+    border-radius: 25px;
+    background: #000;
+    color: #fff;
+}
 
 /*footer*/
 .footer-content{    
