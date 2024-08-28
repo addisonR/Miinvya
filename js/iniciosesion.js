@@ -1,5 +1,7 @@
-let boton_iniciar = document.getElementById('btn-iniciar')
-boton_iniciar.addEventListener('click', iniciarsesion)
+
+
+let boton_iniciar = document.getElementById('btn-iniciar');
+boton_iniciar.addEventListener('click', iniciarsesion);
 
 function iniciarsesion(){
     let usuario = document.getElementById('usuario').value;
@@ -18,4 +20,4 @@ function iniciarsesion(){
     else{
         alert("Datos incorrectos");
     }        
-}
+};
