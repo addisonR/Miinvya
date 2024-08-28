@@ -1,11 +1,11 @@
-
-    let boton_iniciar = document.getElementById('btn-iniciar')
-    boton_iniciar.addEventListener('click', iniciarsesion)
-
+let boton_iniciar = document.getElementById('btn-iniciar')
+boton_iniciar.addEventListener('click', iniciarsesion)
 
 function iniciarsesion(){
     let usuario = document.getElementById('usuario').value;
     let contraseña = document.getElementById('contraseña').value;
+    console.log(usuario)
+    console.log(contraseña)
 
     if(usuario == 'addison'){
         if(contraseña == '1234'){
