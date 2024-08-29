@@ -1,23 +1,27 @@
+const usuario = document.getElementById('usuario')
+const contraseña = document.getElementById('contraseña')
+const idcliente = document.getElementById('titulocliente')
 
+let btn_atras = document.getElementById("iratras")
+btn_atras.addEventListener('click', function(){
+    window.location.href = "../views/index.html"
+});
 
-let boton_iniciar = document.getElementById('btn-iniciar');
-boton_iniciar.addEventListener('click', iniciarsesion);
+let boton_iniciar = document.getElementById('btn-iniciar')
 
-function iniciarsesion(){
-    let usuario = document.getElementById('usuario').value;
-    let contraseña = document.getElementById('contraseña').value;
-    console.log(usuario)
-    console.log(contraseña)
-
-    if(usuario == 'addison'){
-        if(contraseña == '1234'){
-            window.location.href = "../views/miinvya.html";
-        }
-        else{
-            alert("contraseña erronea");
-        }        
+boton_iniciar.addEventListener('click', function iniciarsesion(e){
+    e.preventDefault()
+    const data = {
+        user: usuario.value,
+        pass: contraseña.value
     }
-    else{
-        alert("Datos incorrectos");
+    console.log(data)
+    if(data.user == 'addison' && data.pass == '1234'){
+        window.location.href = "../views/miinvya.html"
+        idcliente.innerHTML.value = "Grupo Addison"
+        console.log(idcliente.value)
     }        
-};
+    else{
+        alert("el usuario es incorrecto")
+    }        
+})
