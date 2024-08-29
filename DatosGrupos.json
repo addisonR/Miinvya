@@ -1,0 +1,21 @@
+[
+    {
+        "id" : 1,
+        "nombre" : "Grupo SAK",
+        "sucursales" : ["Sak la 19",
+                        "Sak la 21",
+                        "Pastor O"],
+        "user": "Sak",
+        "pass": "1234"
+    },
+    {
+        "id" : 2,
+        "nombre" : "Grupo Caribe",
+        "sucursales" : ["Farmamedi",
+                        "Caribe",
+                        "Mi Preferida"],
+        "user": "Caribe",
+        "pass": "1234"
+    }
+]
+
